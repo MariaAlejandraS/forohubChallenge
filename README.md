@@ -14,3 +14,21 @@ Aplicación de backend desarrollada a partir del tercer desafío de Oracle Next 
 4.  MySQL Workbench
 5.  Spring Security
 6.  JWT
+# Modo de uso
+1. Clonar este repositorio https://github.com/MariaAlejandraS/forohubChallenge
+2. Crear la base de datos en MySQL:
+   2.1 Usando MySQL Workbench, crear una base de datos de nombre foro o algo similar.
+   2.2 Configurar el archivo application.properties del proyecto según tus credenciales de MySQL:
+   spring.application.name=ForoHub
+   spring.datasource.url
+   spring.datasource.username
+   spring.datasource.password
+   hibernate.dialect=org.hibernate.dialect.HSQLDialect
+   spring.jpa.hibernate.ddl-auto=update
+   api.security.secret
+3. Configurar las variables de entorno en tu computadora
+   DB_HOST: 
+   MYSQL_USER: 
+   MYSQL_PASSWORD:
+   JWT_SECRET: 
+4. Ejecutar la aplicación. ./mvnw spring-boot:run
